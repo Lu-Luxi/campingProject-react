@@ -1,0 +1,311 @@
+body{
+  background-color: var(--light-green);
+}
+/* 顏色宣告 */
+:root {
+    --primary-color: #587B77;
+    --secondary-color: #014040;
+    --call-action: #8fbabf;
+    --title-color:#091b2f;
+    --text-color:#999999;
+    --light-green:#F4F9F2;
+    /* --table-bg:#D9C589;    */
+    --table-bg:#BAD3D9;   
+   
+  }
+.title-style{
+  /* font-size: 28px; */
+  font-weight: bolder;
+  color: var(--secondary-color);
+}
+.font-text{
+  font-size: 16px;
+  color:var(--secondary-color)
+}
+
+/* 首頁訂單明細區域名稱的樣式 和露營區資訊title樣式*/
+.small-title{
+  font-size:20px ;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+/* 露營區基本介紹的基本資訊字形樣式 */
+.text-style{
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+
+
+/* 上navbar樣式 */
+.topbar{
+    background-color:var(--secondary-color) ;
+    
+   
+}
+/* 營主登入頁面nav bar */
+.login-navBar {
+  background-color: var(--primary-color);
+  height: 10%;
+
+}
+
+
+/* 左側navbar樣式 */
+.sidebar {
+    background-color:var( --primary-color);
+    position: fixed;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+  }
+ 
+
+  /* 左側navbar文字樣式 */
+  .sidebar-text{
+    color:var(--white);
+    border-top-left-radius: 5em  ;
+    border-bottom-left-radius: 5em  ;
+    
+  }
+  .sidebar-text:hover{
+    color:var(--secondary-color);
+    font-weight: bold;
+    background-color: var(--light-green);
+  }
+  /* 左側bar頁面選取sidebar樣式 */
+  .sidebar-select{
+    background-color: var(--light-green);
+    color: var(--secondary-color);
+    font-weight: bold;
+  }
+
+  /* 業績報報樣式 */
+  .index-info{
+    background-color: var(--secondary-color);
+    color:var(--white);
+    font-weight: bolder;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  /* 表格bg-color樣式 */
+  .table-color tbody tr:nth-of-type(odd) {
+    background-color:white;
+  }
+  /* 表格樣式 */
+  .tableStyle{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    /* background-color:var(--table-bg) ; */
+    background-color:var(--light-green) ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  /* 按鈕樣式-三款*/
+  .btnstyle{ 
+    width: 50px;
+    height: 35px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color:var(--primary-color);
+    font-size: 14px;
+    border: 1px solid transparent;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    /* padding: 0.375rem 0.75rem; */
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .btnstyle-small{ 
+    width: 10%;
+    height: 15%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color:var(--primary-color);
+    font-size: 14px;
+    border: 1px solid transparent;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    /* padding: 0.375rem 0.75rem; */
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .btnstyle-small:hover{
+    background-color: var(--call-action);
+    color: var(--white);
+    /* border: solid 0.5px var(--primary-color); */
+  }
+  .btnstyle:hover{
+    background-color: var(--call-action);
+    color: var(--white);
+    /* border: solid 0.5px var(--primary-color); */
+  }
+  .btnstyle-big{
+    width: 80px;
+    height: 45px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color:var(--primary-color);
+    font-size: 14px;
+    border: 1px solid transparent;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    /* padding: 0.375rem 0.75rem; */
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  }
+  .btnstyle-big:hover{
+    background-color: var(--call-action);
+    color: var(--white);
+  }
+/* card陰影 */
+.c-shasow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.25rem;
+  font-size: 18px;
+  
+}
+
+/* cardhead樣式 */
+  .turquoise-bg{
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+   
+  }
+  /* 標籤樣式 */
+  .myTag {
+    width: auto;
+    padding: 1px 4px;
+    font-size: 12px;
+    color:var(--primary-color);
+    border: 1px solid var(--primary-color);
+    }
+  /* input樣式*/
+  .formstyle{
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 70%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    /* font-size: 1rem; */
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  /* input樣式 短款 */
+  .formstyle-small{
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 50%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    /* font-size: 1rem; */
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  /* input樣式 長款 */
+  .formstyle-long{
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 70%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  /* 銷售分析頁面的選擇日期input樣式 */
+
+.select-date{
+  width:18%;
+  font-size: 12px;
+}
+
+
+/* 銷售業面長條圖樣式 */
+.bar-style{
+  width: 105%;
+  padding: 0px 30px;
+  background-color:white;
+  border-radius: 10px;
+  /* height: 90%; */
+}
+/* 銷售頁面雷達圖樣式 */
+.radar-style{
+  width: 100%;
+  background-color:white;
+  border-radius: 30px;
+  height: 90%;
+}
+/* 銷售頁面線條圖樣式 */
+.line-style{
+  width: 100%;
+  background-color:white;
+  border-radius: 30px;
+  height: 90%;
+}
+
+/* 登入card 樣式 */
+.login-input{
+  margin-top: 120px;
+}
+
+/* 營主登入樣式 */
+.login-title{
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* navbar 登出按鈕樣式 */
+
+.logout-btnstyle{
+  background-color: var(--primary-color);
+  width: 55px;
+  /* height: 40px; */
+  text-align: center;
+  color:white;
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 0.25rem ;
+}
+
+.logout-btnstyle:hover{
+  text-decoration: none;
+  color: white;
+  background-color: var(--call-action);
+}
+
+  

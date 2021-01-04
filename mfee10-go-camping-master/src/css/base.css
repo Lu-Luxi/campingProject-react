@@ -1,0 +1,794 @@
+/* 公版CSS */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans TC', sans-serif; 
+    list-style-type: none;
+}
+
+:root {
+    /* 放:root，整個頁面中都可以使用這個變數 */
+    --lightColor:#62d8ce;
+    /* --lightColor:#f1c14f; */
+    --lightColor:#498b92;
+
+    
+    --regularColor:#20948a;
+    --priceColor:#498b92;
+
+    /* 原版(藍綠) */
+    --darkColor:#024959;
+    /* 備存版(更深藍綠) */
+    --darkColor:#003642;
+    /* --darkColor:#3A727F; */
+
+    --heartColor:#F2385A;
+    --tagColor:#B4D2D9;
+    /* 2 */
+    /* --tagColor:#B4D2D9; */
+    
+    /* --bgColor:#F2F2F0; */
+    --bgColor:#F4F9F2;
+    /* --bgColor:#dfe2dd; */
+    /* --bgColor:#fcf9e5; */
+
+
+    --btnColor:rgb(22, 136, 89);
+    --yellowColor:#f8bf38;
+    /* 1 */
+    /* --yellowColor:#ffa600; */
+    /* 2 */
+    --yellowColor:#e16426;
+    /* 3 */
+    --yellowColor:#ff8800;
+
+    
+
+   
+
+    /* --yellowColor:#ffa83c; */
+    --btnColor:#498b92;
+    --titleColor:#d4d4d4;
+    /* 會員頁 */
+    --titleColor:#B4D2D9;
+    --titleColor:#82b0bb;
+}
+
+@font-face {
+    font-family: 'Noto Sans TC';
+    /* font-style: normal;
+    font-weight: normal; */
+    src: url(../font/NotoSansTC-Regular.otf);
+  }
+
+
+/* html {
+    scroll-behavior: smooth;
+  } */
+
+body {
+    padding-top: 66px;
+    background-color: var(--bgColor);
+    /* letter-spacing: .5px; */
+  }
+
+a {
+    color: black;
+  }
+
+a:hover {
+    color: rgb(0, 0, 0);
+  }
+
+
+/* chrom下修改input輸入框默認背景色 */
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 1000px white inset; 
+	-webkit-text-fill-color: rgb(0, 0, 0); 
+}
+
+input[type=text]:focus {
+	-webkit-box-shadow: 0 0 0 1000px white inset; 
+	-webkit-text-fill-color: rgb(59, 59, 59); 
+}
+
+.m-text18 {
+      font-size:18px;
+  }
+
+.m-borderBottom {
+    border-bottom: 2px solid rgb(136, 136, 136);
+}
+
+  /* 按鈕背景色樣式 */
+.m-btnBgColor {
+    background-color:var(--lightColor);
+    background-color:rgb(22, 136, 89);
+    background-color:var(--lightColor);
+}
+
+.m-priceColor {
+    color:var(--priceColor) ;
+}
+
+.m-RegularColor {
+    color:var(--regularColor) ;
+    color:var(--priceColor) ;
+}
+
+
+/* navBar */
+.navbar a {
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin: 0px 4px;
+}
+
+.main-navBar {
+    background-color: rgb(255, 255, 255);
+    background-color: var(--darkColor);
+}
+
+/* coupon */
+.nav-tabs,
+ .nav-link.active {
+     /* background-color:var(--tagColor) !important; */
+     border:none !important;
+ }
+
+ .nav-link.active {
+     background-color:var(--tagColor) !important;
+    }
+
+/* .second-navbar{
+    background-color:#326a70;
+}
+
+.second-navbar a{
+    color: rgb(255, 255, 255);
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.second-navbar a:hover{
+    color: rgb(70,70,70);
+} */
+
+@media screen and (max-width: 600px){
+    .m-search-container{
+        width: 95%;
+        top: 20vh;
+    }
+
+    .m-searchBarFix {
+        width: 95%;
+        top: 12vh;
+    }
+
+}
+
+/* button */
+button:hover {
+    background-color: var(--tagColor);
+}
+
+button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+button {
+    background-color: #fff;
+}
+
+.react-stars:focus {
+outline: none !important;
+}
+
+/* card陰影 */
+
+.cardShadow {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) */
+    
+    /* -webkit-box-shadow: 0px 2px 9px 0px rgba(48, 50, 50, 0.46);
+    -moz-box-shadow:    0px 2px 9px 0px rgba(48, 50, 50, 0.46);
+    box-shadow:         0px 2px 9px 0px rgba(48, 50, 50, 0.46); */
+
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.9);
+-moz-box-shadow:    0px 0px 5px 0px rgba(0, 0, 0, 0.9);
+box-shadow:         0px 0px 5px 0px rgba(0, 0, 0, 0.9);
+}
+
+.card {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.9);
+-moz-box-shadow:    0px 0px 5px 0px rgba(0, 0, 0, 0.9);
+box-shadow:         0px 0px 5px 0px rgba(0, 0, 0, 0.9);
+
+        /* -webkit-box-shadow: 0px 2px 9px 0px rgba(48, 50, 50, 0.46);
+        -moz-box-shadow:    0px 2px 9px 0px rgba(48, 50, 50, 0.46);
+        box-shadow:         0px 2px 9px 0px rgba(48, 50, 50, 0.46); */
+    
+    
+    }
+
+/* .card:hover {
+    -webkit-box-shadow: -1px 2px 8px -1px rgba(0,0,0,0.52);
+    -moz-box-shadow: -1px 2px 8px -1px rgba(0,0,0,0.52);
+    box-shadow: -1px 2px 8px -1px rgba(0,0,0,0.52);
+
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.09);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.09);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.09);
+} */
+
+
+/* select {
+    width: 120px;
+    height: 37px;
+    text-align: center;
+    text-align-last: center;
+} */
+
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color:var(--priceColor);
+    outline: 0;
+    box-shadow: none;
+  }
+
+.form-control {
+    border:1px solid var(--priceColor);
+}  
+
+
+
+/* dropDown */
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--tagColor);
+  }
+
+
+/* 日曆 */
+.react-calendar{
+    padding: 5px 2px;
+
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(0, 0, 0, 0.9);
+    box-shadow:         0px 0px 5px 0px rgba(0, 0, 0, 0.9);
+
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    /* 整體高度 */
+    /* height: 300px !important; */
+    
+}
+
+.react-calendar__navigation button{
+    min-width: 35px !important;  
+    height: 43px;
+}
+
+.react-calendar__tile{
+    /* padding: 0.2em 0.5em 0.5em 0.5em!important; */
+    padding: 8px 10px!important;
+}
+
+.react-calendar__tile--now {
+    width: 40px;
+    height: 43px !important;
+    border-radius: 5px !important;
+    background-color: var(--priceColor) !important;
+    color:white;
+
+}   
+
+
+
+.react-calendar__tile--active {
+    border-radius: 5px ;
+    background-color:#587B77 !important;
+    height: 43px;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+    padding:15px 5px 4px 5px !important;
+}
+
+.react-calendar__navigation {
+    /* height: 50px !important; */
+    margin-bottom: -10px !important;
+}
+
+.react-calendar__navigation__label,
+.react-calendar__navigation__arrow,
+.react-calendar__navigation__prev-button {
+    height: 45px;
+    padding: 15px 0px;
+    font-weight: 900;
+}
+
+abbr[title], abbr[data-original-title] {
+cursor: default;
+text-decoration:none;
+}
+
+.react-calendar__month-view__days__day--weekend{
+    color:var(--heartColor) !important;
+}
+
+.react-calendar button{
+    height: 45px;
+}
+
+
+/* 信用卡 */
+.rccs__card--front, .rccs__card--back{
+    width: 330px !important;
+}
+
+.rccs__card--back {
+    transform-origin:44% 50% !important;
+ 
+}
+
+.orderTag {
+    visibility: hidden;
+    position: absolute;
+    top:132px;
+    left: 13px;
+    color: white;
+    letter-spacing: 1px;
+    background-color: var(--yellowColor);
+    border-radius:5px;
+    padding: 2px 10px;
+}
+
+.orderTag::after {
+    border-color: var(--yellowColor) transparent transparent; 
+    border-style: solid solid solid solid; 
+    border-width: 10px; 
+    bottom: -33px;
+    border-radius: 30px;
+    /* 必須指定，才能顯示內容 */
+    content: "";
+ 
+    height: 0px;
+    top:25px ;
+    left: 10px;
+ 
+    /* 必須指定，否則會變梯形 */
+    position: absolute;
+ 
+    width: 0px;
+}
+
+
+
+
+.searchBarHome {
+    width: 75%;
+    height: 1800px;
+    position: absolute;
+    top: 190px;
+    right: 0;
+    left: 0;
+    margin: auto; 
+}
+
+.searchBarHome2 {
+    width: 75%;
+    /* width: 85%; */
+    position: absolute;
+    top: 260px;
+    top: 120px;
+    top: 90px;
+    
+    right: 0;
+    left: 0;
+    margin: auto; 
+    background-color: var(--darkColor);
+    padding: 1px;
+}
+
+.searchBarHome2Text {
+    width: 75%;
+    /* width: 85%; */
+    position: absolute;
+    top: 260px;
+    top: 80px;
+    /* top: 100px; */
+    color: white;
+    right: 0;
+    left: 120px;
+    margin: auto; 
+    /* background-color: var(--darkColor); */
+    padding: 1px;
+}
+
+.searchBarHomeWish {
+    width: 65%;
+    /* position: absolute; */
+    /* top:160px;
+    right: 0;
+    left: 0; */
+    margin: auto; 
+    /* background-color: var(--darkColor); */
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+
+
+.indexInput {
+    position: absolute;
+    top: -90px;
+    right: 0;
+    left: 0;
+    margin: auto; 
+    color: white;
+}
+
+.myBtn:hover {
+    background-color:#2c656b !important;
+    /* --regularColor:#20948a;
+    --priceColor:#498b92; */
+}
+
+.searchBarBtn:hover {
+    background-color:#ffba19;
+}
+
+
+
+/* scrollSpy */
+
+.m-scrollSpy {
+position: sticky;
+top:0px;
+z-index: 2000;
+height: 66px;
+background-color: #fff;
+}
+
+.m-scrollSpyPast {
+ border-bottom:3px var(--priceColor) solid; padding-bottom:1px;
+}
+
+.m-scrollMap {
+    max-height: calc(100vh - 35vh);
+    overflow-y: scroll;
+  }
+
+
+.m-searchBarFix {
+    width: 60%;
+    position: fixed;
+    top: 7px;
+    left: 22%;
+    /* height: 200px; */
+    z-index: 2000;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.m-searchBarFix input {
+    background-color: var(--bgColor);
+    background-color: white;
+}
+
+.m-searchBarFixSm {
+    width: 55%;
+    position: fixed;
+    top: 6px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2000;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.m-searchBarFixSm input {
+    background-color: var(--bgColor);
+    background-color: white;
+}
+
+.m-searchBarWish {
+    width: 55%;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+
+.m-searchTag {
+    padding: 2px 14px;
+    letter-spacing: 5px;
+   
+    margin:0px 2px;
+    color: #ffffff;
+    border:1px solid #ffffff;
+}
+
+.m-searchTag:hover {
+    background-color: var(--mainColor);
+    color: #ffffff;
+    
+}
+
+
+/* 日期input */
+.daterangepicker .calendar-table th, 
+.daterangepicker .calendar-table td {
+    font-size: 16px !important;
+    line-height: 30px !important;
+    padding: 3px 8px !important;
+}
+
+.daterangepicker td.active,
+ .daterangepicker td.active:hover {
+     background-color: var(--priceColor) !important;
+ }
+
+ .daterangepicker th.month {
+     color:var(--priceColor) ;
+     font-size: 18px !important;
+
+ }
+
+ .weekend {
+     color:var(--heartColor);
+ }
+
+
+
+/* tag */
+.m-tagStyle {
+    padding: 2px 6px ;
+    /* border-radius: 5px; */
+    margin-right: 0.5px;
+    margin-right: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    /* letter-spacing: 1px; */
+    color: #025159;
+    background-color:var(--tagColor);
+}
+
+.m-tagStyle:hover {
+    color: #025159;
+}
+
+.m-searchTag2 {
+    border: 1.5px solid var(--priceColor) !important;
+    border: 1.8px solid var(--priceColor) !important;
+    border-radius: 13px;
+    font-size: 15px;
+    /* font-weight: 600; */
+    /* padding: 3px 11px; */
+    padding: 3px 13px;
+
+
+    /* letter-spacing: 5px; */
+    margin:3px 3px;
+    color: var(--priceColor);
+    
+}
+
+.m-searchTag2:hover {
+    color:var(--darkColor);
+}
+
+
+/* 營區特色 */
+.m-searchTag3 {
+    width: 92px;
+    /* border-radius: 13px;  */
+    padding: 2px 2px;
+    margin: 5px 5px;
+   
+    color: var(--priceColor);
+    /* border: 1px solid var(--darkColor); */
+    border: 1.5px solid var(--priceColor) !important;
+}
+
+.m-searchTag3:hover {
+    color:var(--darkColor);
+}
+
+.m-searchTag4 {
+    font-size: 14px;
+    border-radius: 13px;
+    padding: 3px 11px;
+    letter-spacing: 0px;
+    margin:3px 3px;
+    color: var(--priceColor);
+    border: 1px solid var(--priceColor);
+}
+
+.m-searchTag4:hover {
+    color: var(--darkColor);
+}
+
+
+.m-searchInput {
+    outline: none;
+    border: none;
+    background-color: #fff;  
+}
+
+.m-searchInput:focus {
+    background-color: #fff;  
+}
+
+.m-sortText {
+    color:var(--darkColor);
+    cursor: pointer;
+}
+
+
+.inputWrap {
+    width: 80%;
+    background-color: #fff;
+}
+
+/* searchBtn */
+.m-searchBtn {
+    width: 46px;
+    height: 46px;
+    border-radius: 500px;
+    background-color: var(--lightColor);    
+    background-color: var(--yellowColor);    
+}
+
+.scroll-spy-nav{
+    z-index: 10000;
+}
+
+
+
+.m-fixedIcon {
+    width: 50px;
+    height: 50px;
+    right: 15px;
+    bottom: 35px;
+    /* z-index: 10; */
+    background-color:rgba(255, 255, 255, 0.842);
+    border-radius: 10px;
+}
+
+.m-fixedIcon > a >img {
+    width: 100%;
+}
+
+.m-footer {
+    padding: 150px 0px 0px 0px;
+    background-image: url(../img/footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 400px; */
+    margin-top: 50px;
+}
+
+.m-footerText { 
+    color: #ffffff;
+    font-size: 18px;
+    margin: 100px 0px 0px 0px ;
+}
+
+.m-footerText h4 { 
+    letter-spacing: 5px;
+}
+
+.m-footerCR {
+    padding: 15px 0px;
+    background-color: #024959;     
+}
+
+/* dropdown會員下拉選單 */
+/* .dropdown_nav {
+    border-radius: 4px;
+} */
+
+.dropdown_nav .dropbtn_nav {
+    border: none;
+    outline: none;
+    color: black;
+}
+
+
+
+/* .dropdown-content_nav {
+    border-radius: 5px;
+    padding: 15px 0px;
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    background-color: var(--bgColor);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+ */
+
+
+.dropdown-content_nav a {
+    float: none;
+    color: black;
+    padding: 6px 12px ;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content_nav a:hover {
+    color: gray;
+}
+
+.dropdown_nav:hover .dropdown-content_nav {
+    display: block;
+}
+
+/* 登出鈕 */
+.dropdown-content_nav  input {
+    width: 70%;
+    text-align: center;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    
+}
+
+/* 愛心 */
+.m-loveCampWrap {
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-loveCamp {
+    position: absolute;
+    top:8px;
+    right:8px;
+}
+
+
+.dropdown-menu-right {
+    top:40px;
+}
+
+/* 後台 */
+
+.dashboardInput {
+    text-align: center;
+    width: 270px;
+    cursor: pointer;
+    border: 1px solid var(--darkColor);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+

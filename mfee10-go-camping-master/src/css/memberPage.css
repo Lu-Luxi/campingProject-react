@@ -1,0 +1,297 @@
+/* color*/
+/* :root {
+  --mainMolor: #26bec9;
+  --iconLoveColor: #e08075;
+  --fontColor: black;
+  --mainColor: #7ac5cd;
+  --SideNavHoverColor:#bdc3c7,
+} */
+
+/* 字體 */
+/* body,
+button,
+input,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans TC";
+  white-space:nowrap;
+} */
+
+/* all*/
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+} */
+/* boostrap 設定 */
+/* card 沒邊框 */
+.noborder {
+  border: none !important;
+}
+/* .card{
+    border: none;
+} */
+/* input沒有外框線 */
+.form-control {
+  box-shadow: none !important;
+}
+.btn-outline-primary {
+  border: 0;
+}
+.btmPaddingSmall {
+  padding: 0.1rem;
+}
+/* input沒有圓角 */
+.nav-tabs .nav-link {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* .m-tagStyle {
+  padding: 0.1rem;
+  color: var(--mainMolor) !important;
+  box-shadow: none !important;
+  border: 1px solid var(--mainMolor);
+} */
+/* .btn {
+    box-shadow: none!important;
+}
+.navBtn{
+    border: none;
+    border-radius: 0;
+} */
+/* .navChildBtn{
+    background-color: gray;
+} */
+
+.m-tagStyle:hover {
+  background-color: #fff;
+  color: #26bec9;
+}
+.table {
+  margin-bottom: 0;
+}
+
+/* 標籤設定*/
+p,
+pre {
+  margin: 0;
+}
+.scroe {
+  font-size: 1.3rem;
+}
+a {
+  color: black;
+}
+
+/* iconSize*/
+i {
+  font-size: 20px;
+}
+.fa-star {
+  font-size: 1rem;
+}
+/* navbar */
+/* 開頭超連結顏色 */
+.navbar a {
+  color: var(--mainMolor);
+}
+.rightNav {
+  background-color: white;
+  padding: 0;
+  margin-bottom: 0;
+}
+/* rihgt_nav */
+/* 設右邊框線,及高度100vh */
+/* 設定icon大小 */
+.rightNav i {
+  font-size: 24px;
+}
+
+.rightNav .btn {
+  background-color: rgb(255, 255, 255);
+  color: rgb(69, 69, 69);
+}
+.rightNav .btn:hover {
+  background-color: #f8f9fa;
+  border-right: 2px solid rgb(0, 0, 0);
+}
+
+/* 設置右導覽列超連結hover 字體顏色 */
+.nav-item a:hover {
+  color: gray;
+}
+/* 添加底線 */
+
+/* 01_userhomepagge */
+/* card 圖片設定 */
+.homeCardImg {
+  height: 160px;
+  object-fit: cover;
+}
+/* .borderBotton {
+  border-bottom: 1px solid #dadada;
+} */
+
+.borderTop {
+  border-top: 1px solid #dadada;
+}
+/* 02_odd_message */
+.member_message_page_icon {
+  color: var(--mainMolor);
+}
+
+/* .m-tagStyle {
+  padding: 0.1rem;
+  color: white;
+  box-shadow: none !important;
+} */
+
+/* 導覽列向下展開 */
+.dropDownModal {
+  display: none !important;
+  transition: max-height 0.2s ease-out;
+}
+
+/* 導覽列hover效果 */
+/* .sideNavHover{
+  transition: all .5s;
+} */
+/* .sideNavHover:hover{
+  background-color:rgb(198, 198, 198);
+  border-radius: .2rem 0 0 .2rem;
+  border-right: 3px solid gray;
+}
+.sideNavHover:focus{
+  background-color:rgb(198, 198, 198);
+  border-radius: .1rem;
+} */
+
+/* 03_odd_message */
+/* card圖片 */
+.oddCardImg {
+  object-fit: cover;
+  height: 200px;
+}
+/* 評價按鈕去背去邊框 */
+#EvaluationBtn {
+  background-color: white !important;
+  color: black;
+  border: white;
+}
+#EvaluationBtn:hover {
+  border: 1px solid black;
+}
+.cardOddMessage {
+  border-left: 1px solid rgb(186, 186, 186);
+}
+/* 表格設定 */
+.table {
+  table-layout: fixed;
+  min-width: auto;
+}
+#card_camping_message button {
+  background-color: var(--mainMolor) !important;
+}
+
+/* 03Evaluation_modal */
+/* 消除評價跳窗margin-bottom */
+#evaluationDetails .form-group {
+  margin-bottom: 0;
+}
+
+#evaluationDetails label {
+  margin-bottom: 0;
+}
+
+/* 04_voucher_page */
+.dataBtn {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 0;
+}
+
+/* 05_login_signUp */
+/* 調整按鈕大小 */
+.loginBtn {
+  width: 50%;
+}
+.loginBtn:focus {
+  background-color: var(--mainMolor);
+  color: white;
+}
+
+/* 調整按鈕大小 */
+.signupBtn {
+  width: 50%;
+}
+.signupBtn:focus {
+  background-color: gray;
+  color: white;
+}
+
+/* 06_favorite  */
+/* .m-cardPd {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.m-productImg {
+  height: 160px;
+}
+.m-loveCamp {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.m-cardBodyPd {
+  padding: 0.5rem 0.8rem;
+}
+
+.m-TextColor {
+  color: #26bec9;
+}
+.m-tagStyle {
+  width: auto;
+  padding: 1px 4px;
+  font-size: 12px;
+  color: #26bec9;
+  border: 1px solid #26bec9;
+}
+.m-fontS12 {
+  font-size: 12px;
+} */
+
+/* footer */
+.footer-container {
+  background-color: #26bec9;
+  height: 200px;
+}
+
+body,
+html {
+  height: 100%;
+}
+.bg {
+  /* The image used */
+  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+

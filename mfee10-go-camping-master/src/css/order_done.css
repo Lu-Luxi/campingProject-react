@@ -1,0 +1,26 @@
+/* :root {
+  --lightColor: #62d8ce;
+  --darkColor: #024959;
+  --heartColor: #f2385a;
+  --tagColor: #b4d2d9;
+  --bgColor: #f2f2f0;
+  --test1: #13eba2;
+} */
+
+main {
+  /* height: 100vh; */
+}
+
+h1 {
+  color: var(--darkColor);
+}
+
+h4 {
+  background-color: var(--tagColor);
+}
+
+#order-done-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

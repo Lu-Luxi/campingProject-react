@@ -1,0 +1,17 @@
+.m-sortText {
+    color: #000;
+    cursor: pointer;
+    
+}
+
+.m-sortText:hover {
+    color: var(--priceColor);
+    text-decoration: none;
+    
+}
+
+.m-loveCamp2 {
+    position: absolute;
+    top:13px;
+    right:13px;
+}
